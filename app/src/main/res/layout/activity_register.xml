@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+        <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/regUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textPersonName"
+
+                android:hint="Username"
+                app:met_baseColor="#0056d3"
+                app:met_errorColor="#ddaa00"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@mipmap/ic_username"
+                app:met_primaryColor="#982360" />
+        <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/regNomorhp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+
+                android:hint="Nomor yang terhubung WhatsApp"
+                app:met_baseColor="#0056d3"
+                app:met_errorColor="#ddaa00"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@android:drawable/stat_sys_phone_call_forward"
+                app:met_primaryColor="#982360"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/regEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+
+                android:hint="Email"
+                app:met_baseColor="#0056d3"
+                app:met_errorColor="#ddaa00"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@mipmap/ic_email"
+                app:met_primaryColor="#982360" />
+        <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/regAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textPersonName"
+
+                android:hint="Alamat"
+                app:met_baseColor="#0056d3"
+                app:met_errorColor="#ddaa00"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@mipmap/ic_alamat"
+                app:met_primaryColor="#982360"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/regPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Password"
+                android:inputType="numberPassword"
+                app:met_baseColor="#0056d3"
+                app:met_errorColor="#ddaa00"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@mipmap/ic_password"
+                app:met_primaryColor="#982360" />
+        <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/regConfPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Confirm Password"
+                app:met_baseColor="#0056d3"
+                android:inputType="numberPassword"
+                app:met_errorColor="#ddaa00"
+                app:met_floatingLabel="highlight"
+                app:met_iconLeft="@mipmap/ic_password"
+                app:met_primaryColor="#982360" />
+        <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:orientation="horizontal">
+            <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Admin"
+                    android:id="@+id/regAdmin"
+                    android:layout_weight="1"
+                    android:checked="true"/>
+            <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="User"
+                    android:layout_weight="1"
+                    android:id="@+id/regUser"
+                    android:checked="false"/>
+        </RadioGroup>
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:id="@+id/regBtnRegister"
+                android:background="@color/colorPrimaryDark"
+                android:text="Register"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:id="@+id/regBtnLog"
+                android:gravity="right|center"
+                android:text="Back to Login!!"
+                android:textStyle="italic" />
+
+    </LinearLayout>
+
+</RelativeLayout>
